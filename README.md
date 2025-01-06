@@ -1,0 +1,1 @@
+It is complete a mern stack project with two roles students and admin , where users can see all the available courses to enroll and purchase the courese whereas admin can add new courses along with some more features can handle.
