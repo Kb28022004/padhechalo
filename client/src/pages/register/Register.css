@@ -1,0 +1,106 @@
+.register {
+    background: linear-gradient(to right, #FEAF00, #F8D442);
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  
+  .registerContainer {
+    width: 90%;
+    max-width: 600px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .content1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 16px;
+  }
+  
+  .battery-icon {
+    color: #FEAF00;
+  }
+  
+  .title {
+    font: 700 32px 'Montserrat', sans-serif;
+    color: #000000;
+  }
+  
+  .content2 {
+    font-weight: 600;
+    text-align: center;
+    margin-top: 16px;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  .content3 {
+    font-weight: 400;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 17.07px;
+    color: #6C6C6C;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  .content4 form {
+    margin-top: 20px;
+  }
+  
+  .formGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+  }
+  
+  .field .label {
+    color: #6C6C6C;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 17.07px;
+  }
+  
+  .fileField {
+    margin-top: 20px;
+  }
+  
+  .fileInput {
+    background-color: #F8F8F8;
+  }
+  
+  .submitButton {
+    margin-top: 10px;
+    border-radius: 4px;
+    color: #F8F8F8;
+    text-align: center;
+   background-color: #FEAF00;
+  }
+  
+  .content5 {
+    font-weight: 400;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 17.07px;
+    color: #6C6C6C;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  .content5 a {
+    color: #FEAF00;
+    text-decoration: none;
+  }
+  

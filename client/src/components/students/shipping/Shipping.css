@@ -1,0 +1,116 @@
+.shippingContainer {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  max-width: 100%;
+}
+
+.shippingBox {
+  width: 30vw;
+  height: 92vh;
+  background-color: white;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.shippingHeading {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.654);
+  font: 400 1.3vmax;
+  width: 70%;
+  margin: auto;
+  padding: 1.3vmax;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.205);
+}
+
+.shippingForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: auto;
+  padding: 2vmax;
+  height: 80%;
+  transition: all 0.5s;
+}
+
+.shippingForm > div {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+.shippingForm > div > input,
+.shippingForm > div > select {
+  padding: 1vmax 4vmax;
+  padding-right: 1vmax;
+  border-radius: 4px;
+  font: 300 1vmax cursive;
+  width: 100%;
+  outline: none;
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.257);
+}
+.shippingForm > div > svg {
+  position: absolute;
+  transform: translateX(1vmax);
+  font-size: 1.6vmax;
+  color: rgba(0, 0, 0, 0.654);
+}
+
+.shippingBtn {
+  width: 100%;
+  background-color: tomato;
+  padding: 1vmax;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font: 600 2vmax;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.shippingBtn:hover {
+  background-color: rgb(119, 25, 8);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .shippingBox {
+    width: 70vw; /* Wider width for medium screens */
+  }
+
+  .shippingHeading {
+    font-size: 1.9rem;
+  }
+
+  .shippingForm > div > input,
+  .shippingForm > div > select {
+    font-size: 0.8rem;
+  }
+
+  .shippingBtn {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .shippingBox {
+    width: 70vw; /* Wider width for medium screens */
+  }
+
+  .shippingHeading {
+    font-size: 1.9rem;
+  }
+
+  .shippingForm > div > input,
+  .shippingForm > div > select {
+    font-size: 0.8rem;
+  }
+
+  .shippingBtn {
+    font-size: 1.5rem;
+  }
+}

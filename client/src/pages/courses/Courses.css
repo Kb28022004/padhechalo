@@ -1,0 +1,137 @@
+.coursesHeading {
+    text-align: center;
+    margin: 2vmax auto;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.171);
+    width: 15vw;
+    color: rgba(0, 0, 0, 0.654);
+    font: 500 1.7vmax;
+    padding: 2vmax;
+}
+
+/* Adjust heading for smaller screens */
+@media (max-width: 768px) {
+    .coursesHeading {
+        width: 50vw;
+        font-size: 2vmax;
+        padding: 1.5vmax;
+    }
+}
+
+.courses {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 5vmax;
+    margin-left: 10vmax;
+    justify-content: center;
+    min-height: 30vh;
+}
+
+/* Adjust course grid for smaller screens */
+@media (max-width: 768px) {
+    .courses {
+        margin-left: 0;
+        padding: 0 2vmax;
+    }
+}
+
+.filterBox {
+    width: 14vmax;
+    position: absolute;
+    top: 14vmax;
+    left: 4vmax;
+}
+
+/* Adjust filter box for smaller screens */
+@media (max-width: 768px) {
+    .filterBox {
+        position: static;
+        width: 90%;
+        margin: 2vmax auto;
+    }
+}
+
+.categoryBox {
+    padding: 0;
+}
+
+.category-link {
+    list-style: none;
+    color: rgba(0, 0, 0, 0.61);
+    font: 600 1.1vmax "Roboto";
+    margin: 1vmax 0;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+/* Hover effect for categories */
+.category-link:hover {
+    color: tomato;
+}
+
+/* Active class for the chosen category */
+.category-link.active {
+    color: #1976d2; /* Highlighted color for the selected category */
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.noCoursesMessage {
+    text-align: center;
+    display: grid;
+    place-items: center;
+    color: rgba(255, 0, 0, 0.8); /* A noticeable red color */
+    font: 600 3vmax "Roboto"; /* Slightly smaller font size for emphasis */
+}
+
+/* Adjust no courses message for smaller screens */
+@media (max-width: 768px) {
+    .noCoursesMessage {
+        font-size: 2vmax;
+    }
+}
+
+.filterBox > fieldset {
+    width: 13vmax;
+    margin-top: 1vmax;
+    padding: 1vmax;
+    border: 1px solid rgb(27, 27, 27);
+}
+
+/* Adjust fieldset for smaller screens */
+@media (max-width: 768px) {
+    .filterBox > fieldset {
+        width: 100%;
+    }
+}
+
+.paginationBox {
+    display: flex;
+    justify-content: center;
+    margin: 2vmax 0;
+}
+
+/* Adjust pagination for smaller screens */
+@media (max-width: 768px) {
+    .paginationBox {
+        margin: 1vmax 0;
+    }
+}
+
+/* Additional responsive adjustments for very small screens */
+@media (max-width: 480px) {
+    .coursesHeading {
+        font-size: 2.5vmax;
+    }
+
+    .category-link {
+        font-size: 1.5vmax;
+    }
+
+    .filterBox {
+        margin: 1vmax auto;
+    }
+
+    .noCoursesMessage {
+        font-size: 2.5vmax;
+    }
+}

@@ -1,0 +1,13 @@
+.speedDial {
+    position: fixed;
+    top: 8vmax;
+    right: 3vmax;
+    z-index: 1050; /* Ensure it appears on top */
+  }
+  
+  .speedDialIcon {
+    border-radius: 50%;
+    width: 56px;
+    height: 56px;
+    object-fit: cover; /* Ensures proper scaling of images */
+  }

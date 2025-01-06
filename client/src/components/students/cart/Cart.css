@@ -1,0 +1,156 @@
+/* Core Styling */
+.emptyCart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10vmax;
+  height: 50vh;
+  text-align: center;
+  margin: auto;
+}
+
+.emptyCart > svg {
+  font-size: 5vmax;
+  color: tomato;
+}
+
+.emptyCart > p {
+  font-size: 2vmax;
+}
+
+.emptyCart > a {
+  text-decoration: none;
+  background-color: blue;
+  color: white;
+  width: 10vmax;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.cartPage {
+  padding: 5vmax;
+}
+
+.cartHeader {
+  background: linear-gradient(to right, #feaf00, #f8d442);
+  width: 90%;
+  margin: auto;
+  color: black;
+  display: grid;
+  grid-template-columns: 4fr 1fr 1fr;
+  font: 300 0.9vmax "Monstreat" !important;
+  box-sizing: border-box;
+}
+
+.cartHeader > p {
+  margin: 10px;
+}
+
+.cartHeader > p:last-child {
+  text-align: end;
+}
+
+.cartContainer {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 4fr 1fr 1fr;
+}
+
+.cartInput {
+  display: flex;
+  align-items: center;
+  height: 8vmax;
+}
+
+.cartInput > button {
+  border: none;
+  background-color: rgba(0, 0, 0, 0.616);
+  padding: 0.5vmax;
+  cursor: pointer;
+  color: white;
+  transition: all 0.5s ease;
+}
+
+.cartInput > button:hover {
+  background-color: rgba(0, 0, 0, 0.767);
+}
+
+.cartInput > input {
+  border: none;
+  padding: 0.5vmax;
+  width: 2vmax;
+  text-align: center;
+  outline: none;
+  font: 400 0.8vmax "Roboto";
+  color: rgba(0, 0, 0, 0.74);
+}
+
+.cartSubtotal {
+  display: flex;
+  padding: 0.5vmax;
+  align-items: center;
+  height: 8vmax;
+  justify-content: flex-end;
+  font: 400 0.8vmax;
+  color: rgba(0, 0, 0, 0.76);
+}
+
+.cartGrossTotal {
+  display: grid;
+  grid-template-columns: 2fr 1.2fr;
+}
+
+.cartGrossTotalBox {
+  border-top: 3px solid tomato;
+  margin: 1vmax 4vmax;
+  padding: 2vmax 0;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.checkOutButton {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.checkOutButton > button {
+  border: none;
+  cursor: pointer;
+  color: black;
+  transition: all 0.5s ease;
+  background: linear-gradient(to right, #feaf00, #f8d442);
+  font: 300 0.8vmax "Roboto";
+  border-radius: 30px;
+  padding: 0.8vmax 4vmax;
+  width: 100%;
+  margin: 1vmax 4vmax;
+  outline: none;
+}
+
+@media (max-width: 480px) {
+  .cartHeader {
+    font: 300 1.5vmax "Roboto";
+  }
+
+  .cartGrossTotalBox {
+    width: 135px;
+  }
+  .cartGrossTotalBox > p {
+    font-weight: bold;
+  }
+
+  .checkOutButton > button {
+    font: 300 2vmax "Roboto";
+    width: 100%;
+  }
+
+  .cartInput > input {
+    width: 3vmax;
+    font: 400 1.4vmax "Roboto";
+  }
+}

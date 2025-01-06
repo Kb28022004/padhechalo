@@ -1,0 +1,137 @@
+.orderDetailsPage {
+    background-color: #f9f9f9;
+    min-height: 100vh;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.orderDetailsContainer {
+    background: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 2rem;
+    width: 90%;
+    max-width: 800px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.orderDetailsContainer > h1 {
+    color: #ff6347;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.orderDetailsContainerBox {
+    margin: 1.5rem 0;
+    border: 1px solid #ececec;
+    border-radius: 8px;
+    padding: 1rem;
+    background-color: #fdfdfd;
+}
+
+.orderDetailsContainerBox > div {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5rem 0;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.orderDetailsContainerBox > div p {
+    font-weight: bold;
+    margin: 0;
+    color: #333;
+}
+
+.orderDetailsContainerBox > div span {
+    color: #555;
+}
+
+.greenColor {
+    color: #28a745;
+    font-weight: bold;
+}
+
+.redColor {
+    color: #dc3545;
+    font-weight: bold;
+}
+
+.orderDetailsCartItems {
+    margin-top: 2rem;
+}
+
+.orderDetailsCartItems > h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.orderDetailsCartItemsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.orderDetailsCartItemsContainer > div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    border: 1px solid #ececec;
+    border-radius: 8px;
+    background: #fdfdfd;
+}
+
+.orderDetailsCartItemsContainer img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.orderDetailsCartItemsContainer a {
+    font-weight: bold;
+    color: #007bff;
+    text-decoration: none;
+    flex-grow: 1;
+}
+
+.orderDetailsCartItemsContainer a:hover {
+    text-decoration: underline;
+}
+
+.orderDetailsCartItemsContainer span {
+    color: #333;
+    font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+    .orderDetailsContainer {
+        padding: 1.5rem;
+        width: 95%;
+    }
+
+    .orderDetailsContainer > h1 {
+        font-size: 2rem;
+    }
+
+    .orderDetailsContainerBox > div {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .orderDetailsCartItemsContainer > div {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .orderDetailsCartItemsContainer img {
+        width: 70px;
+        height: 70px;
+    }
+}

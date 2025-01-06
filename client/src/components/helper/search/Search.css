@@ -1,0 +1,36 @@
+/* Search Container */
+.search {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    position: relative;
+}
+
+/* Input Field */
+.search > input {
+    width: 350px;
+    padding: 10px;
+    border: 1px solid #E5E5E5;
+    border-radius: 10px;
+}
+
+/* Search Icon */
+.search .search-icon {
+    position: absolute;
+    left: 90%; /* Adjust position to the right end of the input */
+    cursor: pointer;
+}
+
+/* Responsive Search Bar */
+@media (max-width: 768px) {
+    /* Adjust search input width for smaller screens */
+    .search > input {
+        width: 250px; /* Reduced width on smaller screens */
+        padding: 8px;
+    }
+
+    /* Adjust the position of the search icon */
+    .search .search-icon {
+        left: 85%; /* Move the icon closer for smaller screens */
+    }
+}

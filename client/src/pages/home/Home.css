@@ -1,0 +1,132 @@
+.banner {
+    background-image: linear-gradient(to right, #635dc0, #3027ae);
+    height: 100vh;
+    display: flex;
+    max-width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: relative;
+  }
+  
+  .banner > h1 {
+    margin: 5vmax;
+    font: 600 2.5vmax "Monstreat" !important ;
+  }
+  
+  .banner > p {
+    font: 300 1.4vmax "Lucida Sans" !important;
+  }
+  
+  .banner > a > button {
+    margin-bottom: 5vmax;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: white;
+    padding: 1vmax;
+    width: 9vmax;
+    cursor: pointer;
+    transition: all 0.5s;
+    font: 500 1vmax "Roboto";
+  }
+  
+  .banner > a > button:hover {
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    transform: scale(1.2);
+  }
+  
+  .banner::after {
+    content: "";
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffffff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    clip-path: polygon(100% 74%, 0 100%, 100% 100%);
+    max-width: 100%;
+  }
+  
+  .homeHeading {
+    text-align: center;
+    margin-bottom: 5vmax;
+    font-family: 'Monstreat' !important;
+    font-size: 1.6vmax;
+    border-bottom: 1px solid rgba(21, 21, 21, 0.5);
+    width: 20vmax;
+    margin: 5vmax auto;
+    padding: 1vmax;
+  }
+  
+  .Homecontainer {
+    display: flex;
+    margin: 2vmax auto;
+    width: 80vw;
+    flex-wrap: wrap;
+    max-width: 100%;
+    justify-content: center;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .banner {
+      height: 100vmin;
+      padding: 5vmin;
+    }
+  
+    .banner > h1 {
+      font: 600 2vmax "Roboto";
+    }
+  
+    .banner > p {
+      font: 300 1.2vmax "Lucida Sans";
+    }
+  
+    .banner > a > button {
+      width: 12vmax;
+      font: 500 0.9vmax "Roboto";
+    }
+    
+  
+    .homeHeading {
+      font-size: 1.2vmax;
+      width: 25vmax;
+    }
+  
+    .container {
+      width: 90vw;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .banner {
+      height: 100vmin;
+    }
+  
+    .banner > h1 {
+      font: 600 1.8vmax "Roboto";
+    }
+  
+    .banner > p {
+      font: 300 1vmax "Lucida Sans";
+    }
+  
+    .banner > a > button {
+      width: 15vmax;
+      font: 500 0.8vmax "Roboto";
+    }
+  
+
+    .homeHeading {
+      font-size: 1vmax;
+      width: 30vmax;
+    }
+  
+    .container {
+      width: 100vw;
+      margin: 1vmax auto;
+    }
+  }
+  

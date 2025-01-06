@@ -1,0 +1,46 @@
+.sidebarDrawer {
+  width: 240px;
+  flex-shrink: 0;
+  transition: width 0.3s ease;
+}
+
+.sidebarDrawer .MuiDrawer-paper {
+  width: 240px;
+  box-sizing: border-box;
+  background-color: #f0e7d9;
+  transition: width 0.3s ease-in;
+}
+
+.sidebarHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 18px;
+  font-family: "Montserrat" !important;
+
+}
+
+.listitemContent {
+ 
+  border-radius: 6px;
+  background-color: transparent;
+  color: black;
+  font-family: "Montserrat" !important;
+  transition: all 0.5s ease;
+}
+
+.listitemContent:hover {
+  background-color: #feaf00 !important;
+  transition: all 0.3s ease;
+}
+
+.listitemContent:hover {
+  background-color: #feaf00 !important; /* Added !important to ensure override */
+  transition: all 0.3s ease; /* Smooth transition */
+}
+
+.listitemContent.active {
+    background-color: #feaf00 !important; /* Active background color */
+    transition: all 0.3s ease;
+  }
+  

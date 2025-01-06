@@ -1,0 +1,220 @@
+.courseDetails {
+    width: 100%;
+    padding: 6vmax;
+    box-sizing: border-box;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2vmax;
+  }
+  
+  /* For smaller screens (tablets and phones) */
+  @media (max-width: 768px) {
+    .courseDetails {
+      grid-template-columns: 1fr;
+      padding: 15vmax;
+    }
+    .courseDetails > div:first-child > h2 {
+      color: black;
+    }
+  }
+  
+  .courseDetails > div {
+    width: 100%;
+    /* background-color: aqua; */
+    display: grid;
+    padding: 2vmax;
+    box-sizing: border-box;
+  }
+  
+  .CarouselImage {
+    width: 100%; /* Adjusted to fit dynamically */
+    max-width: 40vmax;
+    margin: auto 0;
+  }
+  
+  
+  /* Title styling */
+  .detailsBlock-1 > h2 {
+    color: rgb(54, 54, 54);
+    font: 600 1.6vmax "Roboto";
+  }
+  
+  .detailsBlock-1 > p {
+    color: rgba(54, 54, 54, 0.582);
+    font: 400 0.9vmax cursive;
+    margin-top: 6px;
+    margin-bottom: 6px;
+  }
+  
+  
+  /* Ratings Block */
+  .detailsBlock-2 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-top: 1px solid rgba(0, 0, 0, 0.205);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.205);
+  
+    width: 70%; /* Adjusted */
+    padding: 1vmax 0;
+  }
+  
+  /* .detailsBlock-2 > span {
+    color: rgba(54, 54, 54, 0.582);
+    font: 200 0.8vmax cursive;
+  } */
+  
+  .detailsBlock-3 {
+    width: 70%;
+  }
+  
+  .detailsBlock-3 > h1 {
+    color: rgba(17, 17, 17, 0.795);
+    font: 600 2.5vmax "Franklin Gothic Medium";
+    margin: 1vmax 0;
+  }
+  
+  .detailsBlock-3-1 {
+    display: flex;
+    align-items: center;
+    gap: 1vmax; /* Added spacing */
+  }
+  
+  .detailsBlock-3-1-1 > button {
+    border: none;
+    background-color: rgba(0, 0, 0, 0.616);
+    padding: 0.5vmax;
+    cursor: pointer;
+    color: white;
+    transition: all 0.5s ease;
+  }
+  
+  .detailsBlock-3-1-1 > button:hover {
+    background-color: rgba(0, 0, 0, 0.717);
+  }
+  
+  .detailsBlock-3-1-1 > input {
+    border: none;
+    padding: 0.5vmax;
+    width: 2vmax;
+    text-align: center;
+    outline: none;
+    font: 400 0.8vmax "Roboto";
+    color: rgba(0, 0, 0, 0.74);
+  }
+  
+  .detailsBlock-3-1 > button:last-child {
+    border: none;
+    cursor: pointer;
+    color: black;
+    transition: all 0.5s ease;
+    background:linear-gradient(to right,#feaf00, #f8d442);
+    font: 500 0.7vmax "Roboto";
+    border-radius: 20px;
+    padding: 0.5vmax 2vmax;
+    margin: 1vmax;
+    outline: none;
+  }
+  
+  .detailsBlock-3-1 > button:last-child:hover {
+    background-color: rgb(214, 81, 64);
+  }
+  
+  .detailsBlock-3 > p {
+    border-top: 1px solid rgba(0, 0, 0, 0.205);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.205);
+    padding: 1vmax 0;
+    margin: 1vmax 0;
+    color: rgba(0, 0, 0, 0.651);
+    font: 400 1vmax "Roboto";
+  }
+  
+  .detailsBlock-4 {
+    color: rgba(0, 0, 0, 0.897);
+    font: 500 1.2vmax sans-serif;
+  }
+  
+  .detailsBlock-4 > p {
+    color: rgba(0, 0, 0, 0.534);
+    font: 300 0.8vmax sans-serif;
+    margin: 0.8vmax 0;
+  }
+  
+  /* Submit Review Button */
+  .submitReview {
+    border: none;
+    width: 100%; /* Adjusted for responsive design */
+    max-width: 70%; /* Prevent over-expansion */
+    background:linear-gradient(to right,#feaf00, #f8d442);
+    border-radius: 20px;
+    color: black;
+    transition: all 0.5s ease;
+    font: 500 1.2vmax "Roboto";
+    padding: 0.5vmax 2vmax;
+    margin: 1vmax 0; /* Centered */
+    outline: none;
+    cursor: pointer;
+  }
+  
+  .submitReview:hover {
+    transform: scale(0.9); /* Reduced for smoother scaling */
+    background-color: orangered;
+  }
+  .enrollButton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: pink;
+  }
+  
+  .submitDailog{
+  display:flex;
+  flex-direction: column;
+  }
+  
+  .submitDialogTextArea{
+    border: 1px solid rgba(0, 0, 0, 0.205);
+    margin: 1vmax 0;
+    outline: none;
+    padding: 1rem;
+    font:300 1rem "Roboto"
+  }
+  
+  .reviewsHeading {
+    font: 500 1.4vmax;
+    text-align: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.205);
+    width: 20vmax;
+    padding: 1vmax;
+    margin: auto;
+    margin-bottom: 4vmax;
+  }
+  .reviews {
+    display: flex;
+    overflow: auto;
+  }
+  /* Small screens (e.g., phones) */
+  @media (max-width: 480px) {
+    .courseDetails {
+      padding: 2vmax;
+      grid-template-columns: 1fr;
+      place-items: center;
+    }
+  
+    .detailsBlock-3 > h1 {
+      font-size: 1.4vmax; /* Adjusted for readability */
+    }
+  
+    .submitReview {
+      font-size: 1vmax;
+      padding: 0.5vmax 1.5vmax;
+    }
+  
+    .CarouselImage {
+      width: 100%; /* Adjust for smaller screens */
+      margin: 0 auto;
+      align-items: center;
+    }
+  }
+  

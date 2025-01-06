@@ -1,0 +1,89 @@
+.cartItemCard {
+    display: flex;
+    padding: 1vmax;
+    height: 8vmax;
+    align-items: flex-start;
+    box-sizing: border-box;
+  }
+  
+  .cartItemCard > img {
+    width: 5vmax;
+  }
+  
+  .cartItemCard > div {
+    display: flex;
+    margin: 0.3vmax 1vmax;
+    flex-direction: column;
+  }
+  
+  .cartItemCard > div > a {
+    font: 300 1vmax cursive;
+    color: rgba(24, 24, 24, 0.845);
+    text-decoration: none;
+  }
+  
+  .cartItemCard > div > span {
+    font: 300 1vmax;
+    color: rgba(24, 24, 24, 0.845);
+  }
+  
+  .cartItemCard > div > p {
+    color: tomato;
+    font: 100 0.9vmax;
+    cursor: pointer;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .cartItemCard {
+      flex-direction: column;
+      align-items: center;
+      height: auto;
+    }
+  
+    .cartItemCard img {
+      width: 6vmax;
+    }
+  
+    .cartItemCard div {
+      margin: 1vmax 0;
+      align-items: center;
+    }
+  
+    .cartItemCard > div > a {
+      font-size: 1.2vmax;
+    }
+  
+    .cartItemCard > div > span {
+      font-size: 1.1vmax;
+    }
+  
+    .cartItemCard > div > p {
+      font-size: 1vmax;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .cartItemCard {
+      padding: 2vmax;
+    }
+  
+    .cartItemCard img {
+      width: 15vmax;
+    }
+  
+    .cartItemCard > div > a {
+      font-size: 2vmax;
+    }
+  
+    .cartItemCard > div > span {
+      font-size: 1.8vmax;
+      font-weight: bold;
+    }
+  
+    .cartItemCard > div > p {
+      font-size: 1.6vmax;
+      font-weight: bolder;
+    }
+  }
+    

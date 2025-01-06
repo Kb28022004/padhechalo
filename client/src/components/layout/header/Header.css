@@ -1,0 +1,195 @@
+/* Header Container */
+.headerContainer {
+  width: 100%;
+  height: 80px; /* Increased height for better alignment */
+  background-color: #ffffff;
+  border: 1px solid #e5e5e5;
+  display: flex;
+  justify-content: space-between; /* Space between elements */
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0 2vmax;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for better aesthetics */
+}
+
+/* Header Title */
+.headerContainer .header-title {
+  color: #2c3e50;
+  text-transform: uppercase;
+  transition: all 0.5s ease;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.headerContainer .header-title > span {
+  color: #e74c3c; /* Red color for the span text */
+}
+
+/* Hover Effect on Title */
+.headerContainer .header-title:hover {
+  transform: scale(1.1);
+  color: #f39c12; /* Change color to yellow-orange on hover */
+}
+
+/* No text decoration for links */
+.headerContainer a {
+  text-decoration: none;
+}
+
+/* Search Container */
+.searchContainer {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Hamburger Icon */
+.hamburger {
+  display: none; /* Hidden by default */
+  cursor: pointer;
+  order: 3; /* Push the hamburger icon to the far right */
+}
+
+.hamburger svg {
+  width: 30px;
+  height: 30px;
+  color: #2c3e50;
+}
+
+/* Navigation Items */
+.nav-items {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.nav-items ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.nav-items ul a {
+  color: #2c3e50;
+  margin: 12px;
+  font-size: 1.3rem;
+  transition: all 0.3s ease;
+  font-family: "Montserrat" !important;
+}
+
+.nav-items ul a:hover {
+  color: #e74c3c; /* Change color to red on hover */
+}
+
+/* Button Styles */
+.button {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.button .MuiButton-root {
+  background-color: #e74c3c; /* Button color */
+  color: white;
+  border-radius: 5px;
+  font-size: 1rem;
+  height: fit-content;
+  transition: all 0.3s ease;
+  font-family: "Montserrat" !important;
+}
+
+.button .MuiButton-root:hover {
+  background-color: #c0392b; /* Darker red on hover */
+}
+
+/* Style for active link */
+.nav-items ul a.active-link {
+  color: green; /* Highlighted color for the active link */
+  font-weight: bold; /* Optional: Make it bold for emphasis */
+  border-bottom: 2px solid black; /* Optional: Add an underline */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .headerContainer {
+    padding: 0 1.5vmax;
+  }
+
+  /* Search input adjustments */
+  .search > input {
+    width: 250px;
+    padding: 8px;
+  }
+
+  /* Search icon adjustment */
+  .search .search-icon {
+    left: 85%;
+  }
+
+  /* Show hamburger icon on mobile */
+  .hamburger {
+    display: block;
+  }
+
+  /* Navigation Items - Mobile */
+  .nav-items {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    background-color: #ffffff;
+    width: 100%;
+    padding: 20px 0;
+    z-index: 100;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for dropdown */
+  }
+
+  /* Toggle Menu */
+  .nav-items.nav-active {
+    display: flex;
+  }
+
+  .nav-items ul {
+    flex-direction: column;
+    gap: 20px; /* Increased gap between items */
+  }
+
+  .nav-items ul a {
+    color: #2c3e50;
+    font-size: 1.2rem;
+  }
+
+  .nav-items ul a:hover {
+    color: #e74c3c;
+  }
+
+  /* Buttons inside Hamburger Menu */
+  .nav-items .button {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav-items .button .MuiButton-root {
+    background-color: #e74c3c;
+    color: white;
+    padding: 6px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    width: 40%; /* Make buttons take full width */
+  }
+
+  .nav-items .button .MuiButton-root:hover {
+    background-color: #c0392b; /* Darker red on hover */
+  }
+
+  /* Hide main buttons on mobile */
+  .button {
+    display: none;
+  }
+}

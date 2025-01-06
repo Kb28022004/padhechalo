@@ -1,0 +1,92 @@
+.greenCell {
+    color: green;
+    font-weight: bold;
+  }
+  
+  .redCell {
+    color: red;
+    font-weight: bold;
+  }
+  
+  .ordersTableContainer {
+    width: 100%;
+    background-color: #fff;
+ 
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow-x: hidden; /* Remove horizontal scrollbar */
+  }
+  
+  .myOrdersPage {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 7vmax;
+    box-sizing: border-box;
+    background-color: rgb(235, 235, 235);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  
+  #myOrdersHeading {
+    text-align: center;
+    font: 400 1.5vmax 'Roboto';
+    padding: 1vmax;
+    color: black;
+    background-color: pink;
+    transition: all 0.5s ease;
+    margin: 2vmax 0;
+  }
+  
+  .myOrdersTable {
+    background-color: #fff;
+    border-radius: 8px;
+    width: 100%; /* Ensures the table adjusts with the container */
+  }
+  
+  @media (max-width: 768px) {
+    .myOrdersPage {
+      padding: 0 5vmax;
+    }
+  
+    #myOrdersHeading {
+      font-size: 3vw;
+      padding: 1vmax;
+    }
+  
+    .ordersTableContainer {
+      padding: 0 1vw;
+    }
+  
+    .myOrdersTable {
+      font-size: 1rem;
+    }
+  
+    .greenCell, .redCell {
+      font-size: 1.2rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    #myOrdersHeading {
+      font-size: 4vw;
+      padding: 2vmax;
+    }
+  
+    .myOrdersTable {
+      font-size: 0.9rem;
+    }
+    
+    .ordersTableContainer {
+      padding: 0 2vw;
+    }
+  
+    .greenCell, .redCell {
+      font-size: 1rem;
+    }
+  }
+  

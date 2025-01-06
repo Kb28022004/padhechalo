@@ -1,0 +1,124 @@
+.courseCard {
+    width: 20vmax;
+    display: flex;
+    flex-direction: column;
+  
+    box-shadow: 0 0 5px rgba(15, 15, 15, 0.26);
+      text-decoration: none;
+    color: rgb(48, 48, 48);
+    margin: 2vmax;
+    transition: all 0.5s ease;
+    padding: 2vmax;
+    box-sizing: border-box;
+  }
+  
+  .courseCard hr{
+      width: 80%;
+      margin: auto;
+      font-weight: 100;
+      color: rgb(219, 215, 215);
+  
+  }
+  
+  .courseCard > img {
+    width: 14vmax;
+    transition: all 0.3s ease;
+  }
+  
+  .courseCard > img:hover {
+    transform: scale(1.1);
+  }
+  
+  .courseCard > p {
+    margin-top: 1vmax;
+   font:200 1.2vmax cursive;
+   color: rgba(0, 0, 0, 0.541);
+  }
+  
+  .courseCard > h4{
+    text-align: center;
+  margin-top: 8px;
+    }
+  
+  .courseCard > div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  .courseCardRating {
+    margin: 0.5vmax 0;
+    font-size: 0.9vmax;
+  }
+  
+  .courseCard:hover {
+    box-shadow: 0 0 5px rgba(15, 15, 15, 0.26);
+    color: black;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .courseCard {
+      width: 25vmax;
+      margin: 1.5vmax;
+      padding: 1.5vmax;
+    }
+  
+    .courseCard > img {
+      width: 18vmax;
+    }
+  
+    .courseCard > p {
+      font-size: 1.5vmax;
+    }
+  
+    .courseCard > div > span {
+      font-size: 1vmax;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .courseCard {
+      width: 30vmax;
+      margin: 1vmax;
+      padding: 1.2vmax;
+    }
+  
+    .courseCard > img {
+      width: 22vmax;
+    }
+  
+    .courseCard > p {
+      font-size: 1.6vmax;
+    }
+  
+    .courseCard > div {
+      display: block;
+      text-align: left;
+    }
+  
+    .courseCard > div > span {
+      font-size: 1.1vmax;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .courseCard {
+      width: 90%;
+      margin: 1vmax auto;
+      padding: 1vmax;
+    }
+  
+    .courseCard > img {
+      width: 60vw;
+    }
+  
+    .courseCard > p {
+      font-size: 1.8vmax;
+    }
+  
+    .courseCard > div > span {
+      font-size: 1.3vmax;
+    }
+  }
+  

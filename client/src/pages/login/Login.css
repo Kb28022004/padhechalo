@@ -1,0 +1,111 @@
+.login {
+    background: linear-gradient(to right, #feaf00, #f8d442);
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  
+  .loginContainer {
+   
+
+    max-width: 600px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .content-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 16px;
+  }
+  
+  .battery--icon {
+    color: #feaf00;
+  }
+  
+  .title {
+    font: 700 32px "Montserrat", sans-serif;
+    color: #000000;
+  }
+  
+  .content-2 {
+    font-weight: 600;
+    text-align: center;
+    margin-top: 16px;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  .content-3 {
+    font-weight: 400;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 17.07px;
+    color: #6c6c6c;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  .content-4 form {
+    margin-top: 20px;
+  }
+  
+  /* Updated form structure: Inputs should stack vertically */
+  .login-formGrid {
+    display: flex;
+    flex-direction: column; /* Stack the inputs vertically */
+    gap: 20px; /* Space between input fields */
+  }
+  
+  .login-field {
+    width: 100%; /* Ensure inputs take full width of container */
+  }
+  
+  .login-field .label {
+    color: #6c6c6c;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 17.07px;
+  }
+  
+  .login-submitButton {
+    margin-top: 10px;
+    border-radius: 4px;
+    color: #f8f8f8;
+    text-align: center;
+    background-color: #feaf00;
+  }
+  
+  .content-5 {
+    font-weight: 400;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 17.07px;
+    color: #6c6c6c;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  .content-5 a {
+    color: #feaf00;
+    text-decoration: none;
+  }
+  
+  /* Make the form responsive for smaller screens */
+  @media (max-width: 768px) {
+    .login-formGrid {
+      flex-direction: column; /* Stack the inputs in a column */
+    }
+  }
+  
